@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Portal Transaccional - Cancelar suscripción - República Dominicana</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- No indexar esta página -->
+        <meta name="robots" content="noindex">
+        <meta name="googlebot" content="noindex">
+        <!-- Dependencias, bootstrap CSS, Lato Font, custom CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='custom.css' rel='stylesheet' type='text/css'>
+        <meta name="author" content="truenito - http://estilopanda.com">
+    </head>
+    <body>
+        <div class="wide"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 class="text-center">¿Desea cancelar su suscripción de notificaciones del <a href="https://comunidad.comprasdominicana.gob.do/STS/DGCP/Login.aspx?currentLanguage=es">Portal Transaccional?</a></h1>
+                    <p class="lead">Lamentamos enormemente que haya decidido darse de baja de nuestra lista de notificaciones y a numerosas oportunidades para ofertar tus bienes y servicios.</p>
+                    <p class="lead">Para cancelar tu suscripción llena el siguiente formulario:</p>
+                    <form id="contact-form" method="post" action="/cancelar.php" role="form">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_name">Tipo de documento<i>*</i>:</label>
+                                        <div class="form-group">
+                                            <div class="radio-inline control-label left-padding-reset">
+                                              <label class="radio-inline control-label">
+                                                <input type="radio" name="document-type" value="Cédula" required>
+                                                Cédula
+                                              </label>
+                                            </div>
+                                            <div class="radio-inline control-label">
+                                              <label class="radio-inline control-label">
+                                                <input type="radio" name="document-type" value="RNC" required>
+                                                RNC
+                                              </label>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_document_id">Numero de documento <i>(sin guiones)*</i>:</label>
+                                        <input id="form_document_id" type="text" name="document-id" class="form-control" placeholder="Introduzca el número de documento *" required="required" data-minlength="9" data-error="Se requiere un RNC o una cédula válida." =>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                         <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Compañía<i>*</i>:</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Introduzca el nombre de su compañía *" required="required" data-error="Se requiere un nombre válido.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">E-mail<i>*</i>:</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Introduzca el email a retirar *" required="required" data-error="Se requiere un e-mail válido.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Mensaje (opcional):</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="¿Por qué está retirando su suscripción?" rows="4" data-error="El mensaje introducido no es válido"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-offset-6 pull-right">
+                                    <p class="text-muted pull-right text-danger baja-alert"><strong>NOTA:</strong> Al darte de baja dejarás de recibir <strong>TODAS</strong> las notificaciones del portal transaccional.</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send pull-right" value="Darse de baja">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted"><strong>*</strong> Estos campos son requeridos. Completar este formulario te eliminaría de la lista de suscripción del <a href="https://comunidad.comprasdominicana.gob.do/STS/DGCP/Login.aspx?currentLanguage=es" target="_blank">Portal Transaccional Dominicano</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div><
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="validator.js"></script>
+        <script src="cancelar.js"></script>
+    </body>
+</html>
